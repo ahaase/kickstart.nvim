@@ -573,7 +573,15 @@ require('lazy').setup({
         function()
           require('conform').format { async = true, lsp_fallback = true }
         end,
-        mode = '',
+        mode = 'n',
+        desc = '[F]ormat buffer',
+      },
+      {
+        '<leader>f',
+        function()
+          require('conform').format { async = true, lsp_fallback = true }
+        end,
+        mode = 'v',
         desc = '[F]ormat buffer',
       },
     },
