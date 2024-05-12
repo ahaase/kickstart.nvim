@@ -805,8 +805,8 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'rose-pine'
-	    vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
-	    vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
@@ -859,9 +859,19 @@ require('lazy').setup({
     opts = {
       ensure_installed = {
         -- default
-        'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc',
+        'bash',
+        'c',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'markdown',
+        'vim',
+        'vimdoc',
         -- custom
-        'javascript', 'typescript', 'query',
+        'javascript',
+        'typescript',
+        'query',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
@@ -936,7 +946,7 @@ require('lazy').setup({
 })
 
 -- My config
-require('alexh')
+require 'alexh'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
