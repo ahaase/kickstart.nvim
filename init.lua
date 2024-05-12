@@ -581,8 +581,9 @@ require('lazy').setup({
         tsserver = {},
         --
         eslint = {},
-        terraform_lsp = {},
+        terraformls = {},
         html = {},
+        cssls = {},
         htmx = {},
         volar = {},
         svelte = {},
@@ -617,13 +618,18 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'tsserver',
-        'rust_analyzer',
-        'eslint',
         'lua_ls',
+
+        'clangd',
+        'gopls',
+        'pyright',
+        'rust_analyzer',
+        'tsserver',
+        'eslint',
         'svelte',
         'terraformls',
         'html',
+        'cssls',
         'volar',
         'templ',
       })
